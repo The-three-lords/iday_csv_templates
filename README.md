@@ -56,13 +56,25 @@ In this section we will check the folder files structure, the data structure, th
 ## Folder structure
 
 In csv-samples folder you can find 4 files
-* group_slots.csv
 * group.csv
-* user_slots.csv
+* group_slots.csv
 * user.csv
-
-### group_slots.csv
-This file contains all empty groups which will be configured in your event. In the sample there are configured 10 groups which will be able to be configured during the event.
->With exceptions you don't need to change this file
+* user_slots.csv
 
 ### group.csv
+This file contains the sample data of a configuration of seven hipotetical gruops of a event. All the data, **except the first line** have to be replaced for real data.
+
+#### Columns of the file
+* id: This is the technical identificator of the group inside the application. Starting at **1000** all groups shoud have a correlative incremental number.
+* innovation_day_id: This column represents the event. The value for this column have to be **always 100**
+* name: The name of the group. >Tip: Keep it simple
+,description,fragments,responsable,sala,is_completed,chosen_communication,responsable2
+### group_slots.csv
+This file contains all empty groups which will be configured in your event. In the sample there are configured 10 groups which will be able to be configured during the event.
+The column meaning are exactly the same than [group.csv](#group.csv)
+
+>Notice: With exceptions you don't need to change this file
+
+>Notice: The slots groups always have the correlative identifier starting by **10000**
+
+
