@@ -37,6 +37,8 @@ After unzip this zip you can find 2 folders and one Readme.md.
 * The **csv-samples** is the folder which you are going to change and send to the set-up responsable of your iday event.
 * From this point we only deal with the files inside **csv-samples** folder.
 
+> Notice: If you are familiar with git repository, you can ask to the set-up responsable of your iday event for a branch in a private repository to add, check and upload the your iday event data
+
 ## Open csv-samples as a proyect in your VSCode
 
 To open csv-samples, right-click on csv-samples folder and click on Open with --> Viscual code.
@@ -45,3 +47,22 @@ To open csv-samples, right-click on csv-samples folder and click on Open with --
 
 After that you are prepared to change and maniputale the sample file data with the information necessary for your iday event.
 ![alt text][vscode]
+
+
+# Adding your iday event data
+
+In this section we will check the folder files structure, the data structure, the meaning of every column of information and the way to validate it.
+
+## Folder structure
+
+In csv-samples folder you can find 4 files
+* group_slots.csv
+* group.csv
+* user_slots.csv
+* user.csv
+
+### group_slots.csv
+This file contains all empty groups which will be configured in your event. In the sample there are configured 10 groups which will be able to be configured during the event.
+>With exceptions you don't need to change this file
+
+### group.csv
