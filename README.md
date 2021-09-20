@@ -63,18 +63,42 @@ In csv-samples folder you can find 4 files
 
 ### group.csv
 This file contains the sample data of a configuration of seven hipotetical gruops of a event. All the data, **except the first line** have to be replaced for real data.
+> Notice: Keep the correlative numbers to do it easier
 
 #### Columns of the file
-* id: This is the technical identificator of the group inside the application. Starting at **1000** all groups shoud have a correlative incremental number.
-* innovation_day_id: This column represents the event. The value for this column have to be **always 100**
-* name: The name of the group. >Tip: Keep it simple
-,description,fragments,responsable,sala,is_completed,chosen_communication,responsable2
+* ⚠️ **id:** This is the technical identificator of the group inside the application. Starting at **1000** all groups shoud have a correlative incremental number.
+> ⚠️ Os parece bien?
+* ⚠️ **innovation_day_id:** This column represents the event. The value for this column have to be **always 100**
+> ⚠️ Creamos el 100?
+* **name:** The name of the group. 
+>Tip: Keep it simple
+* **description**: The description of the group
+* **fragments**: The number of fragments obtained by group. **Always 0**
+* **responsable**: The mail of the responsable of this gruop. This mail have to conincide exactly with the user email of the USER_RESPONSABLE role who is responsable of this group.
+* ⚠️**sala**: The url of the meeting room for defined for the team. This column could be empty. As 1002 row sample data.
+* ⚠️**is_completed**: Part of the status of the group. **Always 0**
+> ⚠️ Esto se usa? Podemos ponerlo como default a 0?
+* ⚠️**chosen_communication**: The name of choosen comunication application for the group. It could be empty
+> ⚠️ Esto se usa?
+* ⚠️**responsable2**: **Always admin@admin.com**
+> ⚠️ Esto se usa?
 ### group_slots.csv
 This file contains all empty groups which will be configured in your event. In the sample there are configured 10 groups which will be able to be configured during the event.
-The column meaning are exactly the same than [group.csv](#group.csv)
+The column meaning are exactly the same than [group.csv](#groupcsv)
 
 >Notice: With exceptions you don't need to change this file
 
 >Notice: The slots groups always have the correlative identifier starting by **10000**
 
+## user.csv
+This file contains the sample data of a configuration of 3 hipotetical reponsables and 21 users. All the data, **except the first line** have to be replaced for real data. 
+> Notice: Keep the correlative numbers to do it easier
+
+#### Columns of the file
+* ⚠️ **id:** This is the technical identificator of the user inside the application. 
+   * Starting at **10000** all users shoud have a correlative incremental number.
+   * Starting at **1000000** for responsables, all responsables shoud have a correlative incremental number.
+> ⚠️ Os parece bien?
+
+grupo_id,email,first_name,sur_name,roles,password,first_time,image,fortaleza
 
