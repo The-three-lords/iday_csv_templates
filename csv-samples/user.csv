@@ -1,7 +1,7 @@
 id,grupo_id,email,first_name,sur_name,roles,password,first_time,image,fortaleza
-1000001,10001,madyson.retha@mail.com,"Madyson","Retha",ROLE_RESPONSABLE,$2y$12$LSqCqHf72HVWG9fues4DUu3PvDYBp6bHh0ytsrU8rdeEVNw08x18G,0,defaultImg.png,a:0:{}
-1000002,10001,sebastien.audrea@mail.com,"Sebástien","Audrea",ROLE_RESPONSABLE,$2y$12$yz4MmkSDTh0VyIRLZD78weRSrNROeAS4byjj4aOIVGAXy8FnwN.w2,0,defaultImg.png,a:0:{}
-1000003,10001,nicky.sergio@mail.com,"Nicky","Sergio",ROLE_RESPONSABLE,$2y$12$Qz4l0Xb0AUBRWRJjNTokeOlMZO6kWCTmreqLRd3YkqbncxQ/oAoVq,0,defaultImg.png,a:0:{}
+1000001,10000,madyson.retha@mail.com,"Madyson","Retha",ROLE_RESPONSABLE,$2y$12$LSqCqHf72HVWG9fues4DUu3PvDYBp6bHh0ytsrU8rdeEVNw08x18G,0,defaultImg.png,a:0:{}
+1000002,10000,sebastien.audrea@mail.com,"Sebástien","Audrea",ROLE_RESPONSABLE,$2y$12$yz4MmkSDTh0VyIRLZD78weRSrNROeAS4byjj4aOIVGAXy8FnwN.w2,0,defaultImg.png,a:0:{}
+1000003,10000,nicky.sergio@mail.com,"Nicky","Sergio",ROLE_RESPONSABLE,$2y$12$Qz4l0Xb0AUBRWRJjNTokeOlMZO6kWCTmreqLRd3YkqbncxQ/oAoVq,0,defaultImg.png,a:0:{}
 10001,1001,noemi.brock@mail.com,"Noémi","Brock",ROLE_USER,$2y$12$LSqCqHf72HVWG9fues4DUu3PvDYBp6bHh0ytsrU8rdeEVNw08x18G,0,defaultImg.png,a:0:{}
 10002,1001,knox.joselyn@mail.com,"Knox","Joselyn",ROLE_USER,$2y$12$yz4MmkSDTh0VyIRLZD78weRSrNROeAS4byjj4aOIVGAXy8FnwN.w2,0,defaultImg.png,a:0:{}
 10003,1001,esmund.lynette@mail.com,"Esmund","Lynette",ROLE_USER,$2y$12$Qz4l0Xb0AUBRWRJjNTokeOlMZO6kWCTmreqLRd3YkqbncxQ/oAoVq,0,defaultImg.png,a:0:{}

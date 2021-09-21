@@ -1,8 +1,8 @@
 [rainbow]: media/rainbow.png "VSCode with rainbow"
 [open]: media/Open.png "Open with VSCode"
 [vscode]: media/VSCodePrepared.png "VsCode Prepared"
-
-
+[csvlint]: media/csvlint.png "CSV LINT"
+[badcsvlint]: media/badcsvlint.png "CSV LINT with error"
 
 <p align="center">
 <br/>
@@ -67,21 +67,22 @@ This file contains the sample data of a configuration of seven hipotetical gruop
 
 #### Columns of the file
 * ⚠️ **id:** This is the technical identificator of the group inside the application. Starting at **1000** all groups shoud have a correlative incremental number.
-> ⚠️ Os parece bien?
+> 💬 Os parece bien?
 * ⚠️ **innovation_day_id:** This column represents the event. The value for this column have to be **always 100**
-> ⚠️ Creamos el 100?
+> 💬 Creamos el 100?
 * **name:** The name of the group. 
 >Tip: Keep it simple
 * **description**: The description of the group
 * **fragments**: The number of fragments obtained by group. **Always 0**
 * **responsable**: The mail of the responsable of this gruop. This mail have to conincide exactly with the user email of the USER_RESPONSABLE role who is responsable of this group.
-* ⚠️**sala**: The url of the meeting room for defined for the team. This column could be empty. As 1002 row sample data.
+* ⚠️**sala**: The url of the meeting room defined for the team. This column could be empty. As 1002 row sample data.
+> 💬 Es cierto se puede dejar vacía sin implicaciones?
 * ⚠️**is_completed**: Part of the status of the group. **Always 0**
-> ⚠️ Esto se usa? Podemos ponerlo como default a 0?
+> 💬 Esto se usa? Podemos ponerlo como default a 0?
 * ⚠️**chosen_communication**: The name of choosen comunication application for the group. It could be empty
-> ⚠️ Esto se usa?
+> 💬 Esto se usa? Podemos dejarlo vacío
 * ⚠️**responsable2**: **Always admin@admin.com**
-> ⚠️ Esto se usa?
+> 💬 Esto se usa?
 ### group_slots.csv
 This file contains all empty groups which will be configured in your event. In the sample there are configured 10 groups which will be able to be configured during the event.
 The column meaning are exactly the same than [group.csv](#groupcsv)
@@ -98,7 +99,34 @@ This file contains the sample data of a configuration of 3 hipotetical reponsabl
 * ⚠️ **id:** This is the technical identificator of the user inside the application. 
    * Starting at **10000** all users shoud have a correlative incremental number.
    * Starting at **1000000** for responsables, all responsables shoud have a correlative incremental number.
-> ⚠️ Os parece bien?
+> 💬 Os parece bien?
+* **grupo_id**: This column is the connection between groups and users. Here you have to put the identificator of the group which user belongs.
+   >⚠️ All responsable user have to be connected with 10000
+* **email**: The email of the user
+* **first_name**: The first name of the user
+* **sur_name**: The sur name of the user
+* **roles**: The posible values in this column are:
+   * ROLE_ADMIN
+   * ROLE_RESPONSABLE
+   * ROLE_USER
+* **password**: The password of the user
+> 💬 Que hacemos con esto? Siempre el mismo o merece la pena generarlos?
+* **first_time**: Always **0**
+> 💬 Esto en que afecta?
+* **image**: Always **defaultImg.png**,
+> 💬 Default value?
+* **fortaleza**: Always **a:0:{}**
+> 💬 Default value?
 
-grupo_id,email,first_name,sur_name,roles,password,first_time,image,fortaleza
+<br/>
 
+# Validating csv
+If you are using VSCode and you have installed CSV Rainbow, you can execute a csv lint which can tell you if the format of the file is correct or have some mistakes.
+
+![alt text][csvlint]
+
+If you want to check the format of the csv file which **you have opened and focused in the screen**, you need to click in this green link and it will be lauched. It all is ok, the link will keep the green color if not it will change to red.
+
+![alt text][badcsvlint]
+
+>⚠️ Before any action in database we will execute this linter for all the files. If some file gives an error it will be returned to responsable to be ammended.

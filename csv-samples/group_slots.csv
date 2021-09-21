@@ -1,4 +1,5 @@
 id,innovation_day_id,name,description,fragments,responsable,is_completed,responsable2
+10000,100,Responsable Team,Responsable Team,0,responsabe@mail.com,0,admin@admin.com
 10001,100,team0001,Group0001,0,slot@mail.com,0,admin@admin.com
 10002,100,team0002,Group0002,0,slot@mail.com,0,admin@admin.com
 10003,100,team0003,Group0003,0,slot@mail.com,0,admin@admin.com
