@@ -13,6 +13,8 @@
 <br/>
 </p>
 
+![GitHub Contributors Image](https://contrib.rocks/image?repo=The-three-lords/iday_csv_templates)
+
 # iday_csv_templates
 This repository contains the data template sample for initial iday set-up and instructions to generate the data for your Iday event.
 
