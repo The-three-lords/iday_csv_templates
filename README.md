@@ -86,7 +86,7 @@ For every new group copy and paste a row and change the columns, id, name, descr
 
 - **description**: The description of the group
 
-- **responsable**: The mail of the responsable of this gruop. This mail have to conincide exactly with the user email of the USER_RESPONSABLE role who is responsable of this group.
+- **responsable**: The mail of the facilitator/responsable of this gruop. This mail have to conincide exactly with the user email of the USER_RESPONSABLE role who is facilitator/responsable of this group.
 - **sala**: The url of the meeting room defined for the team. This column could be empty. As 1002 row sample data.
 
 - ⚠️**innovation_day_id:** This column represents the event. The value for this column have to be **Always 100** (⚠️do not change this value)
@@ -115,10 +115,10 @@ This file contains the sample data of a configuration of 3 hipotetical reponsabl
 - **id:** This is the technical identificator of the user inside the application.
 
   - Starting at **10000** all users shoud have a correlative incremental number.
-  - Starting at **1000000** for responsables, all responsables shoud have a correlative incremental number.
+  - Starting at **1000000** for facilitators/responsables, all facilitators/responsables shoud have a correlative incremental number.
 
 - **grupo_id**: This column is the connection between groups and users. Here you have to put the identificator of the group which user belongs.
-  > 🛑 All responsable user have to be connected with group 10000
+  > 🛑 All facilitator/responsable user have to be connected with group 10000
 - **email**: The email of the user
 - **first_name**: The first name of the user
 - **sur_name**: The sur name of the user
@@ -139,7 +139,7 @@ This file contains the sample data of a configuration of 3 hipotetical reponsabl
 
 This file contains
 
-- 2 slots for responsable user
+- 2 slots for facilitator/responsable user
 - 60 user slots for slot groups (6 for slot group)
 - 7 user slots for real groups.
 
