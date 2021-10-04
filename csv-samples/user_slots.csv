@@ -1,4 +1,6 @@
 id,grupo_id,first_name,sur_name,roles,password,first_time,image,fortaleza
+10000001,10000,responsable_slot,responsable_slot,ROLE_RESPONSABLE,$2y$12$Qz4l0Xb0AUBRWRJjNTokeOlMZO6kWCTmreqLRd3YkqbncxQ/oAoVq,0,defaultImg.png,a:0:{}
+10000002,10000,responsable_slot,responsable_slot,ROLE_RESPONSABLE,$2y$12$Qz4l0Xb0AUBRWRJjNTokeOlMZO6kWCTmreqLRd3YkqbncxQ/oAoVq,0,defaultImg.png,a:0:{}
 100001,10001,slot,slot,ROLE_USER,$2y$12$LSqCqHf72HVWG9fues4DUu3PvDYBp6bHh0ytsrU8rdeEVNw08x18G,0,defaultImg.png,a:0:{}
 100002,10001,slot,slot,ROLE_USER,$2y$12$yz4MmkSDTh0VyIRLZD78weRSrNROeAS4byjj4aOIVGAXy8FnwN.w2,0,defaultImg.png,a:0:{}
 100003,10001,slot,slot,ROLE_USER,$2y$12$Qz4l0Xb0AUBRWRJjNTokeOlMZO6kWCTmreqLRd3YkqbncxQ/oAoVq,0,defaultImg.png,a:0:{}
@@ -59,3 +61,10 @@ id,grupo_id,first_name,sur_name,roles,password,first_time,image,fortaleza
 100058,10010,slot,slot,ROLE_USER,$2y$12$LSqCqHf72HVWG9fues4DUu3PvDYBp6bHh0ytsrU8rdeEVNw08x18G,0,defaultImg.png,a:0:{}
 100059,10010,slot,slot,ROLE_USER,$2y$12$yz4MmkSDTh0VyIRLZD78weRSrNROeAS4byjj4aOIVGAXy8FnwN.w2,0,defaultImg.png,a:0:{}
 100060,10010,slot,slot,ROLE_USER,$2y$12$Qz4l0Xb0AUBRWRJjNTokeOlMZO6kWCTmreqLRd3YkqbncxQ/oAoVq,0,defaultImg.png,a:0:{}
+100061,1001,slot,slot,ROLE_USER,$2y$12$Qz4l0Xb0AUBRWRJjNTokeOlMZO6kWCTmreqLRd3YkqbncxQ/oAoVq,0,defaultImg.png,a:0:{}
+100062,1002,slot,slot,ROLE_USER,$2y$12$Qz4l0Xb0AUBRWRJjNTokeOlMZO6kWCTmreqLRd3YkqbncxQ/oAoVq,0,defaultImg.png,a:0:{}
+100063,1003,slot,slot,ROLE_USER,$2y$12$Qz4l0Xb0AUBRWRJjNTokeOlMZO6kWCTmreqLRd3YkqbncxQ/oAoVq,0,defaultImg.png,a:0:{}
+100064,1004,slot,slot,ROLE_USER,$2y$12$Qz4l0Xb0AUBRWRJjNTokeOlMZO6kWCTmreqLRd3YkqbncxQ/oAoVq,0,defaultImg.png,a:0:{}
+100065,1005,slot,slot,ROLE_USER,$2y$12$Qz4l0Xb0AUBRWRJjNTokeOlMZO6kWCTmreqLRd3YkqbncxQ/oAoVq,0,defaultImg.png,a:0:{}
+100066,1006,slot,slot,ROLE_USER,$2y$12$Qz4l0Xb0AUBRWRJjNTokeOlMZO6kWCTmreqLRd3YkqbncxQ/oAoVq,0,defaultImg.png,a:0:{}
+100067,1007,slot,slot,ROLE_USER,$2y$12$Qz4l0Xb0AUBRWRJjNTokeOlMZO6kWCTmreqLRd3YkqbncxQ/oAoVq,0,defaultImg.png,a:0:{}

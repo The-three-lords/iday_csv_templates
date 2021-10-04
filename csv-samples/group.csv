@@ -1,8 +1,8 @@
-id,innovation_day_id,name,description,fragments,responsable,sala,is_completed,chosen_communication,responsable2
-1001,100,team001,Group001,0,madyson.retha@mail.com,https://meet.google.com/ybe-ymdp-hvn,0,Google Meet,admin@admin.com
-1002,100,team002,Group002,0,sebastien.audrea@mail.com,,0,,admin@admin.com
-1003,100,team003,Group003,0,sebastien.audrea@mail.com,https://meet.google.com/sxv-ovmg-yfy,0,Google Meet,admin@admin.com
-1004,100,team004,Group004,0,sebastien.audrea@mail.com,https://meet.google.com/ujz-ewyj-fqb,0,,admin@admin.com
-1005,100,team005,Group005,0,nicky.sergio@mail.com,https://meet.google.com/yuq-chho-dkz,0,Google Meet,admin@admin.com
-1006,100,team006,Group006,0,madyson.retha@mail.com,https://meet.google.com/nyy-wphq-kre,0,Google Meet,admin@admin.com
-1007,100,team007,Group007,0,nicky.sergio@mail.com,https://meet.google.com/vsw-psag-yns,0,Google Meet,admin@admin.com
+id,name,description,responsable,sala,innovation_day_id,fragments,is_completed
+1001,team001,Group001,madyson.retha@mail.com,https://meet.google.com/ybe-ymdp-hvn,100,0,0
+1002,team002,Group002,sebastien.audrea@mail.com,https://meet.google.com/ybe-ymdp-hvn,100,0,0
+1003,team003,Group003,sebastien.audrea@mail.com,https://meet.google.com/sxv-ovmg-yfy,100,0,0
+1004,team004,Group004,sebastien.audrea@mail.com,https://meet.google.com/ujz-ewyj-fqb,100,0,0
+1005,team005,Group005,nicky.sergio@mail.com,https://meet.google.com/yuq-chho-dkz,100,0,0
+1006,team006,Group006,madyson.retha@mail.com,https://meet.google.com/nyy-wphq-kre,100,0,0
+1007,team007,Group007,nicky.sergio@mail.com,https://meet.google.com/vsw-psag-yns,100,0,0
