@@ -63,8 +63,9 @@ In csv-samples folder you can find 4 files
 - group_slots.csv
 - user.csv
 - user_slots.csv
+- documentation.csv
 
-> ⚠️ Only it is necessary to change group.csv, user.csv and user_slots.csv
+> ⚠️ Only it is necessary to change group.csv, user.csv, user_slots.csv and documentation.csv
 
 ### group.csv
 
@@ -146,6 +147,44 @@ This file contains
 If you create a new real group in group.csv, you will need to add a user_slot in this file to be able to add a new member in this group during the event.
 
 <br/>
+
+## documentation.csv
+
+In spreadsheet create the CSV with the following columns:
+
+- 1: group name
+- 2: phase id (there are 6)
+- 3: link type
+  - DOCUMENTATION: link to the phase drive
+  - LAST CALL: link to the final phase (e.g. alumni.eithealth.eu)
+  - MEETING INVITATION: in case you have put link to the final meeting, otherwise put `#`.
+- 3: main text of the challenge
+  - DOCUMENTATION: link to consult the documentation
+  - LAST CALL: instructions for your last call.
+  - INVITATION TO THE MEETING: Link to the final session
+- 5: secondary text of the challenge
+  - DOCUMENTATION:
+    `<b>Entry message: Access to relevant documentation</b><br><br><p>You have been granted access to the documents you will need to resolve your challenge.</p><br><br><b>May Health be with you!</b>`
+  - LAST CALL:
+    `<p><b>Incoming Message: Instructions for your last call</b></p></p><p>The Interstellar Council thanks you very much for your service.<br>The data collected on this mission will help us launch new expeditions to support colonies throughout the galaxy in the future.<br>So that we can improve the experience for new explorers we kindly ask you to provide feedback. Please take a moment to describe your adventure.</p> <p>`
+  - INVITATION TO THE MEETING:
+    `<p><b>Farewell</b></p></p> <p>Thank you for your feedback.<br>Please accept our deepest and most sincere thanks.<br>Council honors and awards for your work will be presented at our final meeting. We look forward to seeing you there.</p> <br><br> <p><b>Call ID: 937 3957 0776</b></p></p><br><br> <p><b>Access Code: iDay2020</b></p><br><br><p><b>May Health be with you!</b></p><br><p><b>We look forward to seeing you there.`
+- 6: related link
+
+Example of a CSV file for a single group:
+
+```
+team001,6,DOCUMENTATION,Link to consult the documentation,<b>Incoming message: Access to relevant documentation</b><br><p>You have been granted access to the documents you will need to solve your challenge.</p><br><b>  May Health be with you!</b>,https://drive.google.com/drive/folders/1sTYpd7WfStK0aBjQLq42SnULBqQOtKGm?usp=sharing
+team001,1,DOCUMENTATION,Link to consult the documentation,<b>Incoming message: Access to relevant documentation</b><br><p>You have been granted access to the documents you will need to solve your challenge.</p><br><b>  May Health be with you!</b>,https://drive.google.com/drive/folders/1g_5oRsG2J0Sh586rFh_sTf0XXkObjzp9?usp=sharing
+team001,3,DOCUMENTATION,Link to consult the documentation,<b>Incoming message: Access to relevant documentation</b><br><p>You have been granted access to the documents you will need to solve your challenge.</p><br><b>  May Health be with you!</b>,https://drive.google.com/drive/folders/1txjiujmEBpEqcdunWH63EgiUqpvNI7mL?usp=sharing
+team001,2,DOCUMENTATION,Link to consult the documentation,<b>Incoming message: Access to relevant documentation</b><br><p>You have been granted access to the documents you will need to solve your challenge.</p><br><b>  May Health be with you!</b>,https://drive.google.com/drive/folders/1cY8h3yr68eVziiiD8tMko3b8zuGDJ9n_?usp=sharing
+team001,5,DOCUMENTATION,Link to consult the documentation,<b>Incoming message: Access to relevant documentation</b><br><p>You have been granted access to the documents you will need to solve your challenge.</p><br><b>  May Health be with you!</b>,https://drive.google.com/drive/folders/1r3VRrEB6hxDZ_3zl3hWZOgqbv7A1tSXr?usp=sharing
+team001,4,DOCUMENTATION,Link to consult the documentation,<b>Incoming message: Access to relevant documentation</b><br><p>You have been granted access to the documents you will need to solve your challenge.</p><br><b>  May Health be with you!</b>,https://drive.google.com/drive/folders/1nAZR_nMFm6xwPusmUI_fUcN3_Fg3Y17l?usp=sharing
+grenoblelink1,8,LAST CALL,Instructions for your last call,<p><b>Incoming message: Instructions for your last call</b></p> <br> <p>The Intersellar Council is much obliged to you for your service.<br>The data gathered in this mission will help us to launch new expeditions to support the colonies all across the galaxy in the future.<br>So we can improve the experience for new explorers we kindly ask for your feeback. Please take a moment to describe your adventure.</p>,https://alumni.eithealth.eu/topics/18247/page/feedback-survey-2020
+grenoblelink2,8,VOTE,Vote for the most innovative idea,<p><b>Incoming message: Instructions to vote other crew's work</b></p> <br> <p>Congratulations explorers on your successful journey.<br>As you might have guessed you were not alone on this adventure. The Interstellar Council sent several crews to find the Knowledge Colony. We have been informed that they all successfully completed their missions.<br>Their contributions to our current challenges have been recorded so they can be shared with the other expeditions. A medal will be awarded to one of the crews in recognition of the most innovative achievements.<br>It is only fair for you to make that choice together with your fellow companions.</p>,https://drive.google.com/drive/folders/1zZsSnuIFNEcWBpKxzCjlnIQzy1zRwSM2
+grenoblelink3,8,MEETING INVITATION,Link to final session,<p><b>Farewell</b></p> <br> <p>Thank you for your feedback.<br>Please accept our deepest and most sincere appreciation.<br>The councils honours and prizes for your duty will be awarded at our final meeting. We look forward to seeing you there.</p> <br> <p><b>May Health be with you!</b></p>,https://zoom.us/webinar/register/WN_MBGo7-sXTPKKigLhD2B4dw
+
+```
 
 # Validating csv
 
