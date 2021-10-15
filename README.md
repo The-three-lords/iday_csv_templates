@@ -63,9 +63,9 @@ In csv-samples folder you can find 4 files
 - group_slots.csv
 - user.csv
 - user_slots.csv
-- documentation.csv
+- links.csv
 
-> ⚠️ Only it is necessary to change group.csv, user.csv, user_slots.csv and documentation.csv
+> ⚠️ Only it is necessary to change group.csv, user.csv, user_slots.csv and links.csv
 
 ### group.csv
 
@@ -148,26 +148,34 @@ If you create a new real group in group.csv, you will need to add a user_slot in
 
 <br/>
 
-## documentation.csv
+## links.csv
 
 In spreadsheet create the CSV with the following columns:
 
-- 1: group name
-- 2: phase id (there are 6)
-- 3: link type
-  - DOCUMENTATION: link to the phase drive
+- group name: The name of the group which will access to this link
+- phase id: The phase id where the message will appear with this link
+  - Posible values:
+    - 1: GREY_PLANET
+    - 2: RED_PLANET
+    - 3: YELLOW_PLANET
+    - 4: GREEN_PLANET
+    - 5: BLUE_PLANET
+    - 6: Interestellar_Council
+    - 8: END_OF_GALAXY
+- 3: link type, here you have 3 posible types of links, the posible values are
+  - DOCUMENTATION: link to the phase drive store (ej google drive)
   - LAST CALL: link to the final phase (e.g. alumni.eithealth.eu)
   - MEETING INVITATION: in case you have put link to the final meeting, otherwise put `#`.
-- 3: main text of the challenge
-  - DOCUMENTATION: link to consult the documentation
-  - LAST CALL: instructions for your last call.
-  - INVITATION TO THE MEETING: Link to the final session
-- 5: secondary text of the challenge
-  - DOCUMENTATION:
+- 3: main text of the challenge, possible values
+  - if link type is DOCUMENTATION then "link to consult the documentation"
+  - if link type is LAST CALL then "instructions for your last call"
+  - if link type is INVITATION TO THE MEETING then "Link to the final session"
+- 5: secondary text of the challenge, this text will appear in the application
+  - example for link type DOCUMENTATION:
     `<b>Entry message: Access to relevant documentation</b><br><br><p>You have been granted access to the documents you will need to resolve your challenge.</p><br><br><b>May Health be with you!</b>`
-  - LAST CALL:
+  - example for link type LAST CALL:
     `<p><b>Incoming Message: Instructions for your last call</b></p></p><p>The Interstellar Council thanks you very much for your service.<br>The data collected on this mission will help us launch new expeditions to support colonies throughout the galaxy in the future.<br>So that we can improve the experience for new explorers we kindly ask you to provide feedback. Please take a moment to describe your adventure.</p> <p>`
-  - INVITATION TO THE MEETING:
+  - example for link type INVITATION TO THE MEETING:
     `<p><b>Farewell</b></p></p> <p>Thank you for your feedback.<br>Please accept our deepest and most sincere thanks.<br>Council honors and awards for your work will be presented at our final meeting. We look forward to seeing you there.</p> <br><br> <p><b>Call ID: 937 3957 0776</b></p></p><br><br> <p><b>Access Code: iDay2020</b></p><br><br><p><b>May Health be with you!</b></p><br><p><b>We look forward to seeing you there.`
 - 6: related link
 
