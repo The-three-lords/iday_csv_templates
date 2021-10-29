@@ -1,6 +1,7 @@
 [rainbow]: media/rainbow.png "VSCode with rainbow"
 [open]: media/Open.png "Open with VSCode"
 [vscode]: media/VSCodePrepared.png "VsCode Prepared"
+[usercsvlayout]: media/userCSVLayout.png "CSV LINT with error"
 [csvlint]: media/csvlint.png "CSV LINT"
 [badcsvlint]: media/badcsvlint.png "CSV LINT with error"
 
@@ -59,57 +60,20 @@ In this section we will check the folder files structure, the data structure, th
 
 In csv-samples folder you can find 4 files
 
-- group.csv
-- group_slots.csv
 - user.csv
-- user_slots.csv
 - links.csv
-
-> ⚠️ Only it is necessary to change group.csv, user.csv, user_slots.csv and links.csv
-
-### group.csv
-
-This file contains the sample data of a configuration of seven hipotetical gruops of a event. All the data, **except the first line** have to be replaced for real data.
-
-> 🛑 For every new group which you create in this file, you will need to add a new row in user_slots.csv to haver an extra user_slot for this group. If not, during the event, you won't have slots for changes in this group. During the event will be imposible to add or delete users, thus it is very important to have empty slots for that. To create this new row, add a new row to user_slot.csv following the intructions of user.csv
-
-> Notice: Keep the correlative numbers to do it easier
-
-#### Columns of the file
-
-For every new group copy and paste a row and change the columns, id, name, description, responsable and sala, as follows
-
-⚠️Keep the values of innovation_day_id, fragments and is_completed
-
-- **id:** This is the technical identificator of the group inside the application. Starting at **1000** all groups shoud have a correlative incremental number.
-
-- **name:** The name of the group.
-
-- **description**: The description of the group
-
-- **responsable**: The mail of the facilitator/responsable of this gruop. This mail have to conincide exactly with the user email of the USER_RESPONSABLE role who is facilitator/responsable of this group.
-- **sala**: The url of the meeting room defined for the team. This column could be empty. As 1002 row sample data.
-
-- ⚠️**innovation_day_id:** This column represents the event. The value for this column have to be **Always 100** (⚠️do not change this value)
-
-- ⚠️**fragments**: The number of fragments obtained by group. **Always 0** (⚠️do not change this value)
-
-- ⚠️**is_completed**: Part of the status of the group. **Always 0** (⚠️do not change this value)
-
-### group_slots.csv
-
-This file contains all empty groups which will be configured in your event. In the sample there are configured 10 groups which will be able to be configured during the event.
-The column meaning are exactly the same than [group.csv](#groupcsv)
-
-> Notice: 🛑 With exceptions you don't need to change this file
-
-> Notice: The slots groups always have the correlative identifier starting by **10000**
 
 ## user.csv
 
-This file contains the sample data of a configuration of 3 hipotetical reponsables and 21 users. All the data, **except the first line** have to be replaced for real data.
+This file contains the sample data of a configuration of:
 
-> Notice: Keep the correlative numbers to do it easier
+- 3 hipothetical reponsables
+- 2 hiothetical slots for responsables who are necessary in last time
+- 29 hipothetical users
+- 7 hipothetical user slots for real groups (because there are 7 real groups)
+- 21 hipothetical user slots for slot groups
+
+![alt text][usercsvlayout]
 
 #### Columns of the file
 
@@ -119,15 +83,24 @@ This file contains the sample data of a configuration of 3 hipotetical reponsabl
   - Starting at **1000000** for facilitators/responsables, all facilitators/responsables shoud have a correlative incremental number.
 
 - **grupo_id**: This column is the connection between groups and users. Here you have to put the identificator of the group which user belongs.
-  > 🛑 All facilitator/responsable user have to be connected with group 10000
+
+  > 🛑 All facilitator/responsable user have to be connected with group 217
+
+  > 🛑 Users groups identificator have to start by 218, to necessary number. Every new number will be a new group. Thus all members of a group have to share the same number group identificator
+
 - **email**: The email of the user
 - **first_name**: The first name of the user
 - **sur_name**: The sur name of the user
 - **⚠️roles**: The posible values in this column are:
+
   - ROLE_ADMIN
   - ROLE_RESPONSABLE
   - ROLE_USER
+
     > ⚠️ If you create a ROLE_USER user, copy a ROLE_USER row, If yout create a ROLE_RESPONSABLE user, copy a ROLE_RESPONSABLE row. Thus keep the role in this row.
+
+    > ⚠️ You can create a user with role admin if you want.
+
 - **⚠️password**: The password of the user
   > ⚠️ If you create a ROLE_USER user, copy a ROLE_USER row, If yout create a ROLE_RESPONSABLE user, copy a ROLE_RESPONSABLE row. Thus keep the password of this row.
 - **⚠️first_time**: Always **0** (⚠️do not change this value)
@@ -136,23 +109,18 @@ This file contains the sample data of a configuration of 3 hipotetical reponsabl
 
 - **⚠️fortaleza**: Always **a:0:{}** (⚠️do not change this value)
 
-## user_slots.csv
-
-This file contains
-
-- 2 slots for facilitator/responsable user
-- 60 user slots for slot groups (6 for slot group)
-- 7 user slots for real groups.
-
-If you create a new real group in group.csv, you will need to add a user_slot in this file to be able to add a new member in this group during the event.
-
-<br/>
-
 ## links.csv
+
+In this csv you have to add 6 rows for every group whether slots or not.
+In the sample csv you can find:
+
+- team1 for responsable group --> this group won't be used by the platform, but it is necesary for technical issues. (The links in this group can be empty)
+- team2 to team8 --> Real groups for users
+- team9 to team11 --> Slots grupos, for possible expontaneous groups during the event
 
 In spreadsheet create the CSV with the following columns:
 
-- group name: The name of the group which will access to this link
+- group name: The group name is autogenerated by the application with a combination between team[number]installation[year], only put team1, team2...teamX, to keep the relation in your mind. Do not waste your time trying to put "original" names
 - phase id: The phase id where the message will appear with this link
   - Posible values:
     - 1: GREY_PLANET
