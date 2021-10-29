@@ -32,7 +32,7 @@ This repository contains the data template sample for initial iday set-up and in
 
 ## Download the files
 
-[Download the files here](https://github.com/The-three-lords/iday_csv_templates/archive/refs/heads/main.zip)
+[Download the files here](https://github.com/The-three-lords/iday_csv_templates/archive/refs/heads/New-instructions.zip)
 
 After unzip this zip you can find 2 folders and one Readme.md.
 
