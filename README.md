@@ -58,7 +58,7 @@ In this section we will check the folder files structure, the data structure, th
 
 ## Folder structure
 
-In csv-samples folder you can find 4 files
+In csv-samples folder you can find 2 files
 
 - user.csv
 - links.csv
